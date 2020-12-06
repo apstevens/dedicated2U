@@ -1,0 +1,210 @@
+
+/* ================================= 
+  Base Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+	  line-height: 1.6;
+	  color: #3a3a3a;
+}
+
+h3,
+h4 {
+  font-family: 'Bungee', cursive;
+  color: #444444;
+  background: #FFFFFF;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC,
+             1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 
+             4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 
+             4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 
+             7px 6px 1px #CCCCCC;
+}
+
+.text {
+  font-family: 'Tillana', cursive;
+}
+
+.main-header {
+  color: #fff;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.jumbotron {
+  background: #fff;
+}
+
+.nav-item li,
+.nav-link a {
+  color: #fff;
+}
+
+.main-images {
+  border-radius: 5px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 8px 9px 9px -1px rgba(0,0,0,0);
+  width: 1000px;
+  height: 500px;
+}
+
+.quote-img {
+  border-radius: 5px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 8px 9px 9px -1px rgba(0,0,0,0);
+  width: 360px;
+  height: 240px;
+}
+
+.quote-box {
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC,
+             1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 
+             4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 
+             4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 
+             7px 6px 1px #CCCCCC;
+  line-height: 0.5;
+}
+
+.quote {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  position: relative;
+  margin: 0;
+  margin-left: 5px;
+}
+
+/* .quote:before,
+.quote:after {
+  font-size: 3rem;
+  line-height: 2.5rem;
+  position: absolute;
+} */
+
+.btn {
+  background: #fff;
+  color: #000;
+  transition: cubic-bezier(0,1.56,.91,-0.5) 0.6s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.quote:before {
+  content: "“";
+  top: 0.1em;
+  left: -0.3em;
+}
+
+.quote:after {
+  content: "”";
+  bottom: -0.1em;
+  margin-left: 0.1em;
+  position: absolute;
+}
+
+.source {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+  text-align: right;
+  margin-right: 4em;
+}
+
+.source:before {
+  content: "— ";
+}
+
+
+.citation:before {
+  content: ", ";
+
+}
+
+.year:before {
+  content: ", ";
+}
+
+.type:before {
+  content: ", ";
+
+}
+
+.card-img-top {
+  width: 419px;
+  height: 423px;
+}
+
+.dropdown-menu {
+  border-radius: 5px;
+}
+
+.navbar-nav a {
+  transition: cubic-bezier(0,1.56,.91,-0.5) 0.6s;
+}
+
+.navbar-nav a:hover {
+  border: 1px solid #000;
+  border-radius: 5px;
+  transform: scale(1.1);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+.dropdown-menu a {
+  transition: cubic-bezier(0,1.56,.91,-0.5) 0.5s;
+}
+
+.dropdown-menu a:hover {
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  transform: scale(1.1);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 51%, rgba(0,212,255,1) 100%);
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media(min-width: 768px) {
+
+  header {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,98,121,1) 51%, rgba(0,212,255,1) 100%);
+  }
+
+  .card-img-top {
+  width: 1076px;
+  height: 900px;
+}
+
+  .card-text,
+  .blockquote-footer {
+    font-family: 'Tillana', cursive;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  .main-images {
+    width: 372px;
+  }
+
+  .jumbotron {
+  background: url(../images/Dedicated-2-U-logo.png) no-repeat;
+  background-size: contain;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.quote-img {
+  border-radius: 5px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 8px 9px 9px -1px rgba(0,0,0,0);
+  width: 1000px;
+  height: 500px;
+}
+}
