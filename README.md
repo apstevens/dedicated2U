@@ -1,2 +1,2 @@
-# dedicated2U
+Dedicated 2 U
  
