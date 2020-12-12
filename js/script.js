@@ -231,7 +231,7 @@ function printQuote() {
 }
 
 
-setInterval(printQuote, 5000);
+setInterval(printQuote, 10000);
 
 
 
